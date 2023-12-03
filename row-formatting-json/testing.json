@@ -1,0 +1,157 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "additionalRowClass": {
+    "operator": ":",
+    "operands": [
+      {
+        "operator": "||",
+        "operands": [
+          {
+            "operator": "||",
+            "operands": [
+              {
+                "operator": "||",
+                "operands": [
+                  {
+                    "operator": ">",
+                    "operands": [
+                      {
+                        "operator": "Date()",
+                        "operands": [
+                          {
+                            "operator": "toDateString()",
+                            "operands": [
+                              {
+                                "operator": "Date()",
+                                "operands": ["[$PrimTrning]"]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "Date()",
+                        "operands": [
+                          {
+                            "operator": "toDateString()",
+                            "operands": [
+                              {
+                                "operator": "Date()",
+                                "operands": ["Fri May 17 2024"]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "operator": ">",
+                    "operands": [
+                      {
+                        "operator": "Date()",
+                        "operands": [
+                          {
+                            "operator": "toDateString()",
+                            "operands": [
+                              {
+                                "operator": "Date()",
+                                "operands": ["[$AltTraining]"]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "operator": "Date()",
+                        "operands": [
+                          {
+                            "operator": "toDateString()",
+                            "operands": [
+                              {
+                                "operator": "Date()",
+                                "operands": ["Wed Dec 20 2023"]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "operator": ">",
+                "operands": [
+                  {
+                    "operator": "Date()",
+                    "operands": [
+                      {
+                        "operator": "toDateString()",
+                        "operands": [
+                          {
+                            "operator": "Date()",
+                            "operands": ["[$Appmt]"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "Date()",
+                    "operands": [
+                      {
+                        "operator": "toDateString()",
+                        "operands": [
+                          {
+                            "operator": "Date()",
+                            "operands": ["Fri Dec 22 2023"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "operator": ">",
+            "operands": [
+              {
+                "operator": "Date()",
+                "operands": [
+                  {
+                    "operator": "toDateString()",
+                    "operands": [
+                      {
+                        "operator": "Date()",
+                        "operands": ["[$Inventory]"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "operator": "Date()",
+                "operands": [
+                  {
+                    "operator": "toDateString()",
+                    "operands": [
+                      {
+                        "operator": "Date()",
+                        "operands": ["Fri Dec 29 2023"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sp-css-backgroundColor-BgPeach sp-css-color-PeachFont",
+      "sp-css-backgroundColor-BgLightGray sp-css-color-LightGrayFont"
+    ]
+  }
+}

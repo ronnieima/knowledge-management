@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "additionalRowClass": {
+    "operator": ":",
+    "operands": [
+      {
+        "operator": ">",
+        "operands": [
+          {
+            "operator": "Date()",
+            "operands": [
+              "@now"
+            ]
+          },
+          {
+            "operator": "Date()",
+            "operands": [
+              {
+                "operator": "toDateString()",
+                "operands": [
+                  {
+                    "operator": "+",
+                    "operands": [
+                      {
+                        "operator": "Date()",
+                        "operands": [
+                          "[$PrimTrning]"
+                        ]
+                      },
+                      31536000000
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sp-css-backgroundColor-BgPeach sp-css-color-PeachFont",
+      {
+        "operator": ":",
+        "operands": [
+          {
+            "operator": "==",
+            "operands": [
+              "[$Status]",
+              "Frozen"
+            ]
+          },
+          "sp-css-backgroundColor-BgMintGreen sp-css-color-MintGreenFont",
+          ""
+        ]
+      }
+    ]
+  }
+}
