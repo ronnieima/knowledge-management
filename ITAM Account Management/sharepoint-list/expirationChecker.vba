@@ -1,4 +1,4 @@
-'Checks if document dates are expired
+'Checks if document dates are expired. Used in the "Status" calculated column
 =IF(
     AND(
         DATE(YEAR([Primary Training Cert Date]) + 1, MONTH([Primary Training Cert Date]), DAY([Primary Training Cert Date])) > NOW(),
