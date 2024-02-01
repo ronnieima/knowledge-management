@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "box-sizing": "border-box",
+    "padding": "0 2px",
+    "overflow": "hidden",
+    "text-overflow": "ellipsis",
+    "background-color": "=if([$Appmt_x0020__x002d__x0020_Days_x] <= 30 && [$Appmt_x0020__x002d__x0020_Days_x] > 0, '#8B8000', if([$Appmt_x0020__x002d__x0020_Days_x] <= 0 || @currentField.displayValue == '', '#8B0000' , '#14452F')",
+    "color": "white",
+    "font-size": "16px",
+    "font-weight": "600",
+    "display": "flex",
+    "justify-content": "center"
+  },
+  "txtContent": "@currentField.displayValue"
+}
